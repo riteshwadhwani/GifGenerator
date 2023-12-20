@@ -45,8 +45,7 @@ const LoginForm = ({setIsLoggedIn}) => {
         navigate("/dashboard");
         })
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+        console.log(error);
        alert("Invalid Credentials")
        });
         
